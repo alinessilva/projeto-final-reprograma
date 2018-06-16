@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { fetchRepos } from '../Service/ReposApi'
 import ReposList from './ReposList'
-
+import LogoB from './LogoB.png'
+import './ReposContainer.css'
 
 class ReposContainer extends Component {
     constructor(props) {
@@ -23,8 +24,9 @@ class ReposContainer extends Component {
 
     render() {
         return (
-            <div>
-                <h1> Repos </h1>
+            <div className="border">
+                <img className="logoB" src={LogoB} />
+                <h1> Repositórios </h1>
                 <form action='#' onSubmit={this.handleSubmit}>
                     <input
                         className='input'
