@@ -51,7 +51,7 @@ class Search extends Component {
                 <div>
                     <form onSubmit={this.handleSubmit}>
                         <input className="input" value={this.state.newInput} onChange={this.handleTextChange} placeholder="Digite sua busca..." />
-                        <button type="submit">Pesquisar</button>
+                        <button className='button' type='submit'>Pesquisar</button>
                     </form>
                     {this.state.results.map((result, index) => {
                         return <Result key={index} text={result.text} />
