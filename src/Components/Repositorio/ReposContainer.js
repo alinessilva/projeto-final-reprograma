@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { fetchRepos } from '../Service/ReposApi'
+import { fetchUser, fetchSearch } from '../Service/ReposApi'
 import ReposList from './ReposList'
-import LogoB from './LogoB.png'
+import Logo from './Logo.png'
 import './ReposContainer.css'
 
 class ReposContainer extends Component {
@@ -9,7 +9,10 @@ class ReposContainer extends Component {
         super(props)
         this.state = {
             repos: [],
-            username: ''
+            users: [],
+            user: {},
+            username: '',
+            avatar_url: ''
         }
     }
 
@@ -19,23 +22,23 @@ class ReposContainer extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
-        fetchRepos(this.state.username).then(res => this.setState({repos: res.data}))
+        fetchUser(this.state.username).then(res => this.setState({user: res.data}))
+        fetchSearch(this.state.username).then(res => this.setState({users: res.data.items}))
     }
 
     render() {
         return (
             <div className="border">
-                <img className="logoB" src={LogoB} />
+                <img className="logoB" src={Logo} />
                 <h1> Repositórios </h1>
                 <form action='#' onSubmit={this.handleSubmit}>
                     <input
                         className='input'
                         onChange={this.handleChange}
-                        //style={{width: '250px'}}
                         type='search' 
                         placeholder='Informe usuário e tecle ENTER'/>
                 </form>
-                <ReposList repos={this.state.repos}/>
+                <ReposList repos={this.state.repos} user={this.state.user} users={this.state.users}/>
             </div>
         )
     }
