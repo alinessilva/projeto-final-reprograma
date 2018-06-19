@@ -1,0 +1,29 @@
+/* .container {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14);
+  width: 100%;
+  margin-bottom: 2em;
+} */
+
+/* .container {
+  display: flex;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14);
+} */
+
+.box {
+  flex: 1;
+}
+
+
+
+

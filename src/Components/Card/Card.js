@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import avatar from './avatar.jpg'
+// import avatar from './avatar.jpg'
+import octocat from './octocat_250x200.png'
+import './Card.css'
 
 class Card extends Component {
   handleClick = (e) => {
@@ -8,13 +10,13 @@ class Card extends Component {
 
   render() {
     return (
-      <div>
-        <img src={this.props.image || avatar} alt="Avatar" />
-        <h3>{this.props.name}</h3>
-        <p>{this.props.repository}</p>
-        <p>{this.props.description}</p>
-        <a nClick={this.handleClick}>Link</a>
-      </div>
+        <div className='box'>
+          <img src={this.props.image || octocat} alt="Avatar" />
+          <h3>{this.props.name}</h3>
+          <p>{this.props.repository}</p>
+          <p>{this.props.description}</p>
+          <a href='#' onClick={this.handleClick}>Link</a>
+        </div>
     )
   }
 }

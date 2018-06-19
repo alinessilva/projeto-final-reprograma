@@ -9,7 +9,19 @@ class Section extends Component {
         super(props)
 
         this.state = {
-            lista: [
+            list: [
+                {
+                    image: '',
+                    name: 'Cynthia Zanoni',
+                    repository: 'wifi-livre-sp',
+                    description: 'Lista de locais públicos em São Paulo (capital) com acesso livre à internet'
+                },
+                {
+                    image: '',
+                    name: 'Aline Silva',
+                    repository: 'Diamond',
+                    description: 'Lorem Ipsum'
+                },
                 {
                     image: '',
                     name: 'Cynthia Zanoni',
@@ -30,11 +42,11 @@ class Section extends Component {
         return (
             <div>
                 <h1>Aqui você encontra alguns diamantes do Github</h1>
-
-                {this.state.lista.map(item => (
+                <div className='container'>
+                {this.state.list.map(item => (
                     <Card key={item.repository} image={item.image} name={item.name} repository={item.repository} description={item.description} />
                 ))}
-
+                </div>
             </div>
         )
     }

@@ -1,5 +1,5 @@
 import React from 'react'
-import background from './Background.png'
+import background from './background_woman.jpg'
 import './Background.css'
 
 function Background(props) {
