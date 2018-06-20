@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom'
 import Navbar from './Components/Navbar/Navbar'
-import Header from './Components/Header/Header'
-import Background from './Components/Background/Background'
+import About from './Components/Header/Header'
 import ReposContainer from './Components/Repositorio/ReposContainer'
 import Section from './Components/Section/Section'
-import Search from './Components/Search/Search'
 import Result from './Components/Result/Result'
 import './App.css'
 
@@ -15,8 +13,7 @@ class App extends Component {
     return (
      <div>
        <Navbar />
-       <Header />
-       {/* <Background /> */}
+       <About />
        <ReposContainer />
        <Section />
     </div>

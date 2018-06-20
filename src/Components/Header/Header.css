@@ -6,6 +6,16 @@
     background-size: cover;
 }
 
+.title {
+    margin: 0;
+    color: violet;
+  }
+  
+.message {
+    font-size: larger;
+    color: violet;
+}
+
 @media (min-width: 992px) {
     .header {
         padding: 3rem 10% 0;

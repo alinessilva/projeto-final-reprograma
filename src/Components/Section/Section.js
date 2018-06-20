@@ -39,7 +39,7 @@ class Section extends Component {
     render() {
         return (
             <div>
-                <h1>Aqui você encontra alguns diamantes do Github</h1>
+                <h1>Existe uma mina de diamantes no Github</h1>
                 <div className="parent">
                 {this.state.list.map(item => (
                     <Card 

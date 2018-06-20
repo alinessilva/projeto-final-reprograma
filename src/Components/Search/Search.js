@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
+import Button from '../Button/Button';
 import Result from '../Result/Result'
 import './search.css'
-
 
 class Search extends Component {
     constructor(props){
@@ -14,7 +14,6 @@ class Search extends Component {
         this.handleTextChange = this.handleTextChange.bind(this);
         // this.handleSubmit = this.handleSubmit.bind(this);
     }
-
 
     handleSubmit (e) {
         this.setState({
@@ -50,8 +49,13 @@ class Search extends Component {
             return(
                 <div>
                     <form onSubmit={this.handleSubmit}>
-                        <input className="input" value={this.state.newInput} onChange={this.handleTextChange} placeholder="Digite sua busca..." />
-                        <button className='button' type='submit'>Pesquisar</button>
+                        <input 
+                            className="input" 
+                            value={this.state.newInput} 
+                            onChange={this.handleTextChange} 
+                            placeholder="Digite sua busca..." 
+                        />
+                        <Button />
                     </form>
                     {this.state.results.map((result, index) => {
                         return <Result key={index} text={result.text} />
