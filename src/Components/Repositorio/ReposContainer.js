@@ -29,8 +29,7 @@ class ReposContainer extends Component {
     render() {
         return (
             <div className="border">
-                <img className="logoB" src={Logo} />
-                <h1> Repositórios </h1>
+                <h1> Pesquisar Repositórios no GitHub </h1>
                 <form action='#' onSubmit={this.handleSubmit}>
                     <input
                         className='input'

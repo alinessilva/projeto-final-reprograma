@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import Card from '../Card/Card'
-import Background from '../Background/Background'
-// import Repos from '../Repositorio/ReposContainer'
 import './Section.css'
 
 class Section extends Component {
@@ -42,15 +40,20 @@ class Section extends Component {
         return (
             <div>
                 <h1>Aqui você encontra alguns diamantes do Github</h1>
-                <div className='container'>
+                <div className="parent">
                 {this.state.list.map(item => (
-                    <Card key={item.repository} image={item.image} name={item.name} repository={item.repository} description={item.description} />
+                    <Card 
+                        key={item.repository} 
+                        image={item.image} 
+                        name={item.name} 
+                        repository={item.repository} 
+                        description={item.description} 
+                    />
                 ))}
                 </div>
             </div>
         )
     }
-
 }
 
 export default Section

@@ -12,7 +12,7 @@
 
 .navbar__logo {
     display: block;
-    width: 90px;
+    width: 60px;
 }
 
 @media (min-width: 992px) {
