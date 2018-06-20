@@ -25,10 +25,13 @@
 } */
 
 .child {
-  width: 500px;
-  height: 100px; 
+  width: 33%;
   margin: auto;
   background-color: violet;
+}
+
+.img {
+  width: 50%;
 }
 
 

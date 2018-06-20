@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Button from '../Button/Button';
 import Result from '../Result/Result'
 import './search.css'
 
@@ -55,7 +54,6 @@ class Search extends Component {
                             onChange={this.handleTextChange} 
                             placeholder="Digite sua busca..." 
                         />
-                        <Button />
                     </form>
                     {this.state.results.map((result, index) => {
                         return <Result key={index} text={result.text} />

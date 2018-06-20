@@ -31,6 +31,18 @@ class Section extends Component {
                     name: 'Aline Silva',
                     repository: 'Diamond',
                     description: 'Lorem Ipsum'
+                },
+                {
+                    image: '',
+                    name: 'Cynthia Zanoni',
+                    repository: 'wifi-livre-sp',
+                    description: 'Lista de locais públicos em São Paulo (capital) com acesso livre à internet'
+                },
+                {
+                    image: '',
+                    name: 'Aline Silva',
+                    repository: 'Diamond',
+                    description: 'Lorem Ipsum'
                 }
             ]
         }

@@ -11,7 +11,7 @@ class Card extends Component {
   render() {
     return (
         <div className="child">
-          <img src={this.props.image || octocat} alt="Avatar" />
+          <img className="img" src={this.props.image || octocat} alt="Avatar" />
           <h3>{this.props.name}</h3>
           <p>{this.props.repository}</p>
           <p>{this.props.description}</p>
