@@ -22,6 +22,7 @@ class ReposContainer extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
+        if (!window.females || !window.females[this.state.username.toLowerCase()]) return;
         fetchUser(this.state.username).then(res => this.setState({user: res.data}))
         fetchSearch(this.state.username).then(res => this.setState({users: res.data.items}))
     }
