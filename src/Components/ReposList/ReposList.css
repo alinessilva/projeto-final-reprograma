@@ -1,0 +1,22 @@
+.back_violet {
+  background-color: #695AA6
+}
+
+.container {
+  display: flex;
+  background-color: aqua;
+}
+
+.box {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background-color: aqua;
+}
+
+.img {
+  width: 30%;
+}
+

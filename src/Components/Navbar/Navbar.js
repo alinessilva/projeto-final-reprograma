@@ -1,6 +1,5 @@
 import React from 'react'
 import Logo from './Logo.png'
-// import Menu from './Menu/Menu'
 // import { Link } from '../../rotas/Rotas'
 import './Navbar.css'
 

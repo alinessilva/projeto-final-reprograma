@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { fetchUser, fetchSearch } from '../Service/ReposApi'
-import ReposList from '../Repositorio/ReposList'
+import ReposList from '../ReposList/ReposList'
 import SectionGit from '../SectionGit/SectionGit';
 import './Banner.css'
 

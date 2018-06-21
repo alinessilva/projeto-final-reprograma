@@ -1,11 +1,11 @@
 import React from 'react';
+import ReposList from '../ReposList/ReposList';
 import './SectionGit.css'
-import ReposList from '../Repositorio/ReposList';
 
 
 function SectionGit(props) {
     return (
-      <div>
+      <div className="">
         <ReposList users={props.users} />
       </div>
     )
