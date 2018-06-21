@@ -5,6 +5,7 @@ import Banner from './Components/Banner/Banner'
 import Section from './Components/Section/Section'
 import ReposContainer from './Components/Repositorio/ReposContainer'
 import Result from './Components/Result/Result'
+
 import './App.css'
 
 
@@ -23,7 +24,8 @@ class App extends Component {
        <Navbar />
        <Banner onFilterChange={this.handleFilterChange} />
        <Section filter={this.state.filter}/>
-       <ReposContainer />
+       {/* <ReposContainer /> */}
+       <Navbar />
     </div>
     );
   }

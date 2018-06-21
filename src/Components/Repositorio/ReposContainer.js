@@ -3,6 +3,7 @@ import { fetchUser, fetchSearch } from '../Service/ReposApi'
 import ReposList from './ReposList'
 import Logo from './Logo.png'
 import './ReposContainer.css'
+import SectionGit from '../SectionGit/SectionGit';
 
 
 class ReposContainer extends Component {
@@ -30,8 +31,7 @@ class ReposContainer extends Component {
 
     render() {
         return (
-            <div className="border">
-                <h1> Pesquisar Repositórios no GitHub </h1>
+            <div className="">
                 <form action='#' onSubmit={this.handleSubmit}>
                     <input
                         className='input'
@@ -39,10 +39,10 @@ class ReposContainer extends Component {
                         type='search' 
                         placeholder='Informe usuário e tecle ENTER'/>
                 </form>
-                <ReposList repos={this.state.repos} user={this.state.user} users={this.state.users}/>
+                <SectionGit users={this.state.repos} user={this.state.user} users={this.state.users} />
             </div>
         )
-    }
+    }   
 }
 
 export default ReposContainer

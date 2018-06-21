@@ -9,25 +9,36 @@ class Section extends Component {
                     image: '',
                     name: 'Cynthia Zanoni',
                     repository: 'wifi-livre-sp',
-                    description: 'Lista de locais públicos em São Paulo (capital) com acesso livre à internet'
+                    description: 'Lista de locais públicos em São Paulo (capital) com acesso livre à internet',
+                    link: 'href=https://github.com/cyz/wifi-livre-sp'
                 },
                 {
                     image: '',
-                    name: 'Aline Silva',
-                    repository: 'Diamond',
-                    description: 'Lorem Ipsum'
+                    name: 'Wendy Kan',
+                    repository: 'twitter-sentiment-analysis',
+                    description: 'Os scripts analisam as saídas do twitter (da API do twitter) e as combinam com o dicionário de sentimentos. Em seguida, dá a cada tweet uma pontuação de sentimento.',
+                    link: 'https://github.com/wendykan/twitter-sentiment-analysis'
                 },
                 {
                     image: '',
-                    name: 'Cynthia Zanoni',
-                    repository: 'wifi-livre-sp',
-                    description: 'Lista de locais públicos em São Paulo (capital) com acesso livre à internet'
+                    name: 'Sarah Drasner',
+                    repository: 'explorador de matriz',
+                    description: 'Um recurso para ajudar a descobrir qual método de matriz JavaScript seria melhor usar a qualquer momento',
+                    link: 'https://github.com/sdras/array-explorer'
                 },
                 {
                     image: '',
-                    name: 'Aline Silva',
-                    repository: 'Diamond',
-                    description: 'Lorem Ipsum'
+                    name: 'Sarah Drasner',
+                    repository: 'explorador de matriz',
+                    description: 'Um recurso para ajudar a descobrir qual método de matriz JavaScript seria melhor usar a qualquer momento',
+                    link: 'https://github.com/sdras/array-explorer'
+                },
+                {
+                    image: '',
+                    name: 'Simone Amorim',
+                    repository: 'react -weather',
+                    description: 'Um aplicativo simples para pesquisar o clima em sua cidade',
+                    link: 'https://github.com/simoneas02/react-weather'
                 }
             ]
         }
@@ -41,7 +52,7 @@ class Section extends Component {
 
             return (
                 <div>
-                    <h1>Existe uma mina de diamantes no Github</h1>
+                    <h1>Conheça alguns projetos inspiradores gratuítos no Github</h1>
                     <div className="parent">
                     {list.map(item => (
                         <Card 

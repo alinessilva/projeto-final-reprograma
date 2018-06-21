@@ -1,7 +1,10 @@
 import React, {Component} from 'react'
 import { fetchUser, fetchSearch } from '../Service/ReposApi'
-import './Banner.css'
 import Search from '../Search/Search';
+import ReposContainer from '../Repositorio/ReposContainer'
+import './Banner.css'
+import SectionGit from '../SectionGit/SectionGit';
+
 
 class Banner extends Component {
   handleChange = (e) => {
@@ -13,23 +16,20 @@ class Banner extends Component {
     e.preventDefault()
 }
 
-
   render(){
     return(
-      <div className="banner">
-        <form action="#" onSubmit={this.handleSubmit}>
-          <h1 className="title">
-            Aqui você encontra projetos de mulheres inspiradoras do mundo todo!
-          </h1>
-          <p className="message">
-            Você tem uma idéia e não sabe por onde começar?
-          </p>
-          <input 
-            className="input" 
-            type="search" 
-            onChange={this.handleChange} 
-            placeholder="Digite sua busca..." />
-        </form>
+      <div>
+        <div className="banner">
+          <form action="#" onSubmit={this.handleSubmit}>
+            <h1 className="title">
+              Aqui você encontra projetos de mulheres inspiradoras do mundo todo!
+            </h1>
+            <p className="message">
+              Você tem uma idéia e não sabe por onde começar?
+            </p>
+          </form>
+        </div>
+          <ReposContainer />
       </div>
     )
   }

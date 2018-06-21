@@ -10,5 +10,8 @@
 
 .parent {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
 }

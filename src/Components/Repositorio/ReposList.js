@@ -5,9 +5,9 @@ const ReposList = props => {
     <ul>
         {props.users.map(user => (
             <div key={ user.id }>
-                <li> {user.fullname} </li>
+                <li> { user.fullname } </li>
                 <li> <img src={ user.avatar_url } /> </li>
-                <li> {user.login} </li>
+                <li> { user.login } </li>
             </div>
         ))}
     </ul>)

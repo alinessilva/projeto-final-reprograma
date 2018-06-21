@@ -13,11 +13,12 @@
   margin: 0 auto;
   margin-bottom: 1em;
   margin-top: 1em;
-  
+  margin-right: 1em;
+  background-color: violet;
 }
 
 .img {
-  width: 50%;
+  width: 40%;
 }
 
 
