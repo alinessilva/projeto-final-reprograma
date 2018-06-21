@@ -3,9 +3,6 @@ import { Route, Switch } from 'react-router-dom'
 import Navbar from './Components/Navbar/Navbar'
 import Banner from './Components/Banner/Banner'
 import Section from './Components/Section/Section'
-import ReposContainer from './Components/Repositorio/ReposContainer'
-import Result from './Components/Result/Result'
-
 import './App.css'
 
 

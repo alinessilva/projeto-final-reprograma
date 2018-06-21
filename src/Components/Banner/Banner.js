@@ -1,20 +1,32 @@
 import React, {Component} from 'react'
 import { fetchUser, fetchSearch } from '../Service/ReposApi'
-import Search from '../Search/Search';
-import ReposContainer from '../Repositorio/ReposContainer'
-import './Banner.css'
+import ReposList from '../Repositorio/ReposList'
 import SectionGit from '../SectionGit/SectionGit';
+import './Banner.css'
 
 
 class Banner extends Component {
-  handleChange = (e) => {
-    const filter = e.target.value
-    this.props.onFilterChange(filter)
+  constructor(props) {
+    super(props)
+    this.state = {
+        repos: [],
+        users: [],
+        user: {},
+        username: '',
+        avatar_url: ''
+    }
   }
 
+  handleChange = (e) => {
+    this.setState({username: e.target.value})
+  }
+ 
   handleSubmit = (e) => {
     e.preventDefault()
-}
+    // if (!window.females || !window.females[this.state.username.toLowerCase()]) return;
+    fetchUser(this.state.username).then(res => this.setState({user: res.data}))
+    fetchSearch(this.state.username).then(res => this.setState({users: res.data.items}))
+  }
 
   render(){
     return(
@@ -27,9 +39,15 @@ class Banner extends Component {
             <p className="message">
               Você tem uma idéia e não sabe por onde começar?
             </p>
+            <input
+              className='input'
+              onChange={this.handleChange}
+              type='search' 
+              placeholder='Informe usuário e tecle ENTER'
+            />
           </form>
         </div>
-          <ReposContainer />
+        <ReposList users={this.state.users} />
       </div>
     )
   }
