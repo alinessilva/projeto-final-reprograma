@@ -28,13 +28,6 @@ class Section extends Component {
                 },
                 {
                     image: '',
-                    name: 'Sarah Drasner',
-                    repository: 'explorador de matriz',
-                    description: 'Um recurso para ajudar a descobrir qual método de matriz JavaScript seria melhor usar a qualquer momento',
-                    link: 'https://github.com/sdras/array-explorer'
-                },
-                {
-                    image: '',
                     name: 'Simone Amorim',
                     repository: 'react -weather',
                     description: 'Um aplicativo simples para pesquisar o clima em sua cidade',

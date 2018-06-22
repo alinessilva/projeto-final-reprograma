@@ -1,13 +1,16 @@
 import React from 'react'
+import { Row, Col } from 'react-materialize';
 import './SectionTips.css'
+import CardGit from '../CardGit/CardGit';
 
 
 function SectionTips(props) {
     return (
-        <header className="tips">
-          <h1>Teste</h1>
-          <img className="" src=""/>
-        </header>
+        <Row>
+            <Col m={3} s={12}>
+            <CardGit />
+            </Col>
+        </Row>
     )
 }
 

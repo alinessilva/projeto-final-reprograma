@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom'
+import Header from './Components/Header/Header'
 import Navbar from './Components/Navbar/Navbar'
 import Banner from './Components/Banner/Banner'
 import Section from './Components/Section/Section'
 import SectionTips from './Components/SectionTips/SectionTips'
 import './App.css'
+import Footer from 'react-materialize/lib/Footer';
 
 
 class App extends Component {
@@ -12,11 +14,12 @@ class App extends Component {
   render() {
     return (
      <div>
-       <Navbar />
+       <Header />
+       {/* <Navbar /> */}
        <Banner />
        <Section />
        <SectionTips />
-       <Navbar />
+       <Footer />
     </div>
     );
   }

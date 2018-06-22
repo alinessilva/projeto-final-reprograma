@@ -1,19 +1,23 @@
 import React from 'react'
+import { Row, Col, Card } from 'react-materialize';
 import './ReposList.css'
 
 const ReposList = props => {
     return(
-    <div className="container">
+    <Card>    
+    <Row>
     <ul className="box">
         {props.users.map(user => (
-            <div key={ user.id }>
+            <Col s={8} m={8} offset="s2 m2" key={ user.id }>
                 <li> { user.fullname } </li>
                 <li> <img className="img" src={ user.avatar_url } /> </li>
                 <li> { user.login } </li>
-            </div>
+            </Col>
         ))}
     </ul>
-    </div>)
+    </Row>
+    
+    </Card>)
 }
 
 export default ReposList
