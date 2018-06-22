@@ -6,6 +6,11 @@ body {
 }
 
 h1 {
-  /* color: #421242; */
+  font-size: 2em;
   color: #9F9F9F;
+  text-align: center;
+}
+
+.page-footer {
+  background-color: violet;
 }

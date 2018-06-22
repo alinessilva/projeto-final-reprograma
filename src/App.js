@@ -6,7 +6,7 @@ import Banner from './Components/Banner/Banner'
 import Section from './Components/Section/Section'
 import SectionTips from './Components/SectionTips/SectionTips'
 import './App.css'
-import Footer from 'react-materialize/lib/Footer';
+import Footer from './Components/Footer/Footer';
 
 
 class App extends Component {
@@ -19,7 +19,7 @@ class App extends Component {
        <Banner />
        <Section />
        <SectionTips />
-       <Footer />
+       {/* <Footer /> */}
     </div>
     );
   }

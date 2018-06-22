@@ -7,11 +7,14 @@
 }
 
 .title {
+    display: flex;
+    text-align: center;
     margin: 0;
     color: violet;
   }
   
 .message {
+    text-align: center;
     font-size: larger;
     color: violet;
 }

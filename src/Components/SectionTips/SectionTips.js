@@ -7,7 +7,7 @@ import CardGit from '../CardGit/CardGit';
 function SectionTips(props) {
     return (
         <Row>
-            <Col m={3} s={12}>
+            <Col m={12} s={12}>
             <CardGit />
             </Col>
         </Row>
