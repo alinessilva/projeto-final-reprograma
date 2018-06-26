@@ -1,9 +1,13 @@
-import React from "react";
-import { Footer } from 'react-materialize';
+import React from 'react'
+import './Footer.css'
 
-<Footer>
-    <h5 className="white-text">Reprograma</h5>
-    <p className="grey-text text-lighten-4">Desenvolvido por Aline Silva</p>
-</Footer>;
+function Footer (props){
+    return(
+        <div class="footer">
+            <p>Desenvolvido por Aline Silva - Reprograma 2018.</p>
+            
+        </div>
+    )
+}
 
 export default Footer;

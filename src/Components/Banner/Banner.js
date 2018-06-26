@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import { fetchUser, fetchSearch } from '../Service/ReposApi'
 import ReposList from '../ReposList/ReposList'
-import SectionGit from '../SectionGit/SectionGit';
 import './Banner.css'
 
 
@@ -36,14 +35,14 @@ class Banner extends Component {
             <h1 className="title">
               Aqui você encontra projetos de mulheres inspiradoras do mundo todo!
             </h1>
-            <p className="message">
-              Você tem uma idéia e não sabe por onde começar?
-            </p>
+            {/* <p className="message">
+              Você tem uma idéia e não sabe por onde começar? Faça um busca e conheça projetos Opensource no GitHub
+            </p> */}
             <input
               className='input'
               onChange={this.handleChange}
               type='search' 
-              placeholder='Informe usuário e tecle ENTER'
+              placeholder='Informe nome ou repositório e tecle ENTER'
             />
           </form>
         </div>

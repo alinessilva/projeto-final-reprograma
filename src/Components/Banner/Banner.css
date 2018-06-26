@@ -9,14 +9,14 @@
 .title {
     display: flex;
     text-align: center;
-    margin: 0;
-    color: violet;
+    margin-top: 11em;
+    color: #FFFFFF;
   }
   
 .message {
     text-align: center;
     font-size: larger;
-    color: violet;
+    color: #FFFFFF;
 }
 
 .input {

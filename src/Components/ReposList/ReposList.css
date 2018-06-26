@@ -14,3 +14,10 @@
   width: 30%;
 }
 
+
+.position {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}

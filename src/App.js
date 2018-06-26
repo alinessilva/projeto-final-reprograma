@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom'
+// import { Route, Switch } from 'react-router-dom'
 import Header from './Components/Header/Header'
 import Navbar from './Components/Navbar/Navbar'
 import Banner from './Components/Banner/Banner'
 import Section from './Components/Section/Section'
-import SectionTips from './Components/SectionTips/SectionTips'
-import './App.css'
 import Footer from './Components/Footer/Footer';
-
+import './App.css'
 
 class App extends Component {
-
   render() {
     return (
      <div>
@@ -18,8 +15,7 @@ class App extends Component {
        {/* <Navbar /> */}
        <Banner />
        <Section />
-       <SectionTips />
-       {/* <Footer /> */}
+       <Footer />
     </div>
     );
   }

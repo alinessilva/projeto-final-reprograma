@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 // import avatar from './avatar.jpg'
 import octocat from './octocat_250x200.png'
 import './Card.css'
@@ -12,10 +13,10 @@ class Card extends Component {
     return (
         <div className="child">
           <img className="img" src={this.props.image || octocat} alt="Avatar" />
-          <h3>{this.props.name}</h3>
+          <h4>{this.props.name}</h4>
           <p>{this.props.repository}</p>
           <p>{this.props.description}</p>
-          <a href='{this.props.link}' onClick={this.handleClick}>Link</a>
+          <Link to="/"><a href='{this.props.link}' onClick={this.handleClick}>Link</a></Link>
         </div>
     )
   }
