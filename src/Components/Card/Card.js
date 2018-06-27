@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-// import avatar from './avatar.jpg'
 import octocat from './octocat_250x200.png'
 import './Card.css'
 
@@ -16,7 +14,7 @@ class Card extends Component {
           <h4>{this.props.name}</h4>
           <p>{this.props.repository}</p>
           <p>{this.props.description}</p>
-          <Link to={this.props.link} onClick={this.handleClick}>GitHub</Link>
+          <a href={this.props.link} target="_blank">GitHub</a>
         </div>
     )
   }

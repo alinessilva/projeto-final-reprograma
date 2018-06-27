@@ -4,13 +4,12 @@ import './ReposList.css'
 
 const ReposList = props => {
     return(
-    <div>    
+    <div className="position">    
         {props.users.map(user => (
-            <Card>
+            <Card className="card-input">
                 <Row>
-                    <Col s={12} m={6}>
+                    <Col>
                         <img className="img circle responsive-img" alt="avatar" src={ user.avatar_url } />
-                        <li>key={ user.id }></li>
                         <li>{ user.fullname }</li>
                         <li className="grey darken-2 white-text">{ user.login }</li>
                     </Col>      

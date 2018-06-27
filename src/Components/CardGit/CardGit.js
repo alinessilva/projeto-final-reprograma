@@ -5,25 +5,35 @@ import './CardGit.css'
 function CardGit () {
     return(
         <div className="row-cards">
-        <h1>Faça sua primeira contribuição</h1>
+        <h1>É facil, faça seu primeiro commit hoje mesmo!</h1>
             <div className="card">
-                <img className="card-img" src={octcat} alt="octocat" />
+                <div>
+                    <img  className="card-img" src={octcat} alt="octocat" />
+                </div>
                 <p>Lorem Ipsum</p>
             </div>
             <div className="card">
-                <img className="card-img" src={octcat} alt="octocat" />
+                <div>
+                    <img  className="card-img" src={octcat} alt="octocat" />
+                </div>
                 <p>Lorem Ipsum</p>
             </div> 
             <div className="card">
-                <img className="card-img" src={octcat} alt="octocat" />
+                <div >
+                    <img  className="card-img" src={octcat} alt="octocat" />
+                </div>
                 <p>Lorem Ipsum</p>
             </div> 
             <div className="card">
-                <img className="card-img" src={octcat} alt="octocat" />
+                <div>
+                    <img  className="card-img" src={octcat} alt="octocat" />
+                </div>
                 <p>Lorem Ipsum</p>
             </div> 
             <div className="card">
-                <img className="card-img" src={octcat} alt="octocat" />
+                <div>
+                    <img  className="card-img" src={octcat} alt="octocat" />
+                </div>
                 <p>Lorem Ipsum</p>
             </div> 
         </div>

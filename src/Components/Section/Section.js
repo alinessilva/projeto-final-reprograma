@@ -14,7 +14,7 @@ class Section extends Component {
                     name: 'Cynthia Zanoni',
                     repository: 'wifi-livre-sp',
                     description: 'Lista de locais públicos em São Paulo (capital) com acesso livre à internet',
-                    link: 'href=https://github.com/cyz/wifi-livre-sp'
+                    link: 'https://github.com/cyz/wifi-livre-sp'
                 },
                 {
                     image: Wendy,
