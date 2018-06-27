@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, NavItem, Row} from 'react-materialize';
+import { Navbar, NavItem } from 'react-materialize';
 import Logo from './Logo50x50.png'
 
 const Img = <img src={Logo} alt={"YourBrand"}/>;

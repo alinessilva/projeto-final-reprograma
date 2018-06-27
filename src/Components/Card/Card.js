@@ -16,7 +16,7 @@ class Card extends Component {
           <h4>{this.props.name}</h4>
           <p>{this.props.repository}</p>
           <p>{this.props.description}</p>
-          <Link to="/"><a href='{this.props.link}' onClick={this.handleClick}>Link</a></Link>
+          <Link to={this.props.link} onClick={this.handleClick}>GitHub</Link>
         </div>
     )
   }
