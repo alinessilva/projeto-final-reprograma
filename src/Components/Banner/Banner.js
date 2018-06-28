@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { fetchUser, fetchSearch } from '../Service/ReposApi'
+import { fetchUser, fetchSearch, fetchRepos } from '../Service/ReposApi'
 import ReposList from '../ReposList/ReposList'
 import './Banner.css'
 
@@ -25,6 +25,7 @@ class Banner extends Component {
     // if (!window.females || !window.females[this.state.username.toLowerCase()]) return;
     fetchUser(this.state.username).then(res => this.setState({user: res.data}))
     fetchSearch(this.state.username).then(res => this.setState({users: res.data.items}))
+    fetchRepos(this.state.username).then(res => this.setState({repos: res.data}))
   }
 
   render(){
@@ -35,9 +36,6 @@ class Banner extends Component {
             <h1 className="title">
               Aqui você encontra projetos de mulheres inspiradoras do mundo todo!
             </h1>
-            {/* <p className="message">
-              Você tem uma idéia e não sabe por onde começar? Faça um busca e conheça projetos Opensource no GitHub
-            </p> */}
             <input
               className='input'
               onChange={this.handleChange}
@@ -46,7 +44,7 @@ class Banner extends Component {
             />
           </form>
         </div>
-        <ReposList users={this.state.users} />
+        <ReposList users={this.state.users} user={this.state.user} repos={this.state.repos} />
       </div>
     )
   }
