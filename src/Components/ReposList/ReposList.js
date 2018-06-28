@@ -7,11 +7,11 @@ const ReposList = props => {
     <div className="position">    
         {props.users.map(user => (
             <Card className="card-input">
-                <Row>
-                    <Col>
-                        <img className="img circle responsive-img" alt="avatar" src={ user.avatar_url } />
+                <Row className="row">
+                    <Col className="col">
+                        <img className="responsive-img" alt="avatar" src={ user.avatar_url } />
                         <li>{ user.fullname }</li>
-                        <li className="grey darken-2 white-text">{ user.login }</li>
+                        <li>{ user.login }</li>
                     </Col>      
                 </Row>
             </Card>
