@@ -7,6 +7,8 @@ const ReposList = props => {
     <div className="position">    
         {props.users.map(user => (
             <Card className="card-input">
+              {console.log(props.users.length)}
+              {/* {console.log(props.user)} */}
                 <Row key={user.id} className="row">
                     <Col className="collum">
                         <img className="responsive-img" alt="avatar" src={ user.avatar_url } />

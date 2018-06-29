@@ -16,4 +16,17 @@
     text-align: justify;
     line-height: 2;
     font-size: 18px;
+
+}
+
+.sideB {
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    
+}
+
+p {
+    text-align: justify;
+
 }
