@@ -1,5 +1,5 @@
 .banner {
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 80px);
     padding: 1.5rem 1rem 0;
     background-image: url('./background_woman.jpg');
     background-repeat: no-repeat;
@@ -12,14 +12,8 @@
     margin-top: 9em;
     color: #FFFFFF;
   }
-  
-.message {
-    text-align: center;
-    font-size: larger;
-    color: #FFFFFF;
-}
 
-.input {
+.input { 
     font-size: 1rem;
     box-sizing: border-box;
     display: block;
@@ -28,6 +22,7 @@
     margin: 0 0 1rem;
     border: 1px solid black;
     border-radius: 5px;
+    color: #FFFFFF;
 }
 
 .input:focus {
