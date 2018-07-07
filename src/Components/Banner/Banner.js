@@ -28,6 +28,14 @@ class Banner extends Component {
     fetchRepos(this.state.username).then(res => this.setState({repos: res.data}))
   }
 
+  handleClick(e) {
+    e.preventDefault();
+    fetchUser('brunavieirat').then(res => this.setState({user: res.data})).catch(console.log(res))
+    fetchSearch('brunavieirat').then(res => this.setState({users: res.data.items}))
+    fetchRepos('brunavieirat').then(res => this.setState({repos: res.data}))
+    console.log('Clicou');
+  }
+
   render(){
     return(
       <div>
@@ -44,7 +52,7 @@ class Banner extends Component {
             />
           </form>
         </div>
-        <ReposList users={this.state.users} user={this.state.user} repos={this.state.repos} />
+        <ReposList onClickCard={this.handleClick} users={this.state.users} user={this.state.user} repos={this.state.repos} />
       </div>
     )
   }
