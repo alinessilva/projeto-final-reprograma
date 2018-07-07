@@ -28,9 +28,9 @@ class Banner extends Component {
     fetchRepos(this.state.username).then(res => this.setState({repos: res.data}))
   }
 
-  handleClick(e) {
+  handleClick = (e) => {
     e.preventDefault();
-    fetchUser('brunavieirat').then(res => this.setState({user: res.data})).catch(console.log(res))
+    fetchUser('brunavieirat').then(res => this.setState({user: res.data}))
     fetchSearch('brunavieirat').then(res => this.setState({users: res.data.items}))
     fetchRepos('brunavieirat').then(res => this.setState({repos: res.data}))
     console.log('Clicou');
