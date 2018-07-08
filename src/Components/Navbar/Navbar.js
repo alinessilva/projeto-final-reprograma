@@ -7,7 +7,7 @@ import './Navbar.css'
 function Navbar(props) {
     return (
         <header className="navbar">
-                <Link to="/"><img className="navbar__logo" src={Logo}/></Link>
+                <Link to="/"><img className="navbar__logo" alt="Logo do Github segurando um diamante" src={Logo}/></Link>
         </header>
     )
 }

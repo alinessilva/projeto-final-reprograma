@@ -3,7 +3,7 @@ import './Footer.css'
 
 function Footer (props){
     return(
-        <div class="footer">
+        <div className="footer">
             <p>Desenvolvido por Aline Silva - Reprograma 2018.</p>
             
         </div>

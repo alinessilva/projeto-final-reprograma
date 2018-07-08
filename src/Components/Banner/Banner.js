@@ -28,12 +28,11 @@ class Banner extends Component {
     fetchRepos(this.state.username).then(res => this.setState({repos: res.data}))
   }
 
-  handleClick = (e) => {
-    e.preventDefault();
-    fetchUser('brunavieirat').then(res => this.setState({user: res.data}))
-    fetchSearch('brunavieirat').then(res => this.setState({users: res.data.items}))
-    fetchRepos('brunavieirat').then(res => this.setState({repos: res.data}))
-    console.log('Clicou');
+  handleClick = (teste) => {
+    fetchUser(teste).then(res => this.setState({user: res.data}))
+    fetchSearch(teste).then(res => this.setState({users: res.data.items}))
+    fetchRepos(teste).then(res => this.setState({repos: res.data}))
+    // console.log(teste);
   }
 
   render(){
@@ -48,7 +47,7 @@ class Banner extends Component {
               className='input'
               onChange={this.handleChange}
               type='search' 
-              placeholder='Informe nome ou repositório e tecle ENTER'
+              placeholder='Digite um nome e tecle ENTER'
             />
           </form>
         </div>
